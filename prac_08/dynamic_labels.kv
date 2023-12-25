@@ -1,0 +1,16 @@
+BoxLayout:
+    BoxLayout:
+        orientation: 'vertical'
+        id: main
+    Label:
+        size_hint_y: 0.1
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 1
+        size_hint_x: 2
+        Button:
+            text: "Create Widgets"
+            on_press: app.create_widgets()
+        Button:
+            text: "Clear Widgets"
+            on_press: app.clear_all()
